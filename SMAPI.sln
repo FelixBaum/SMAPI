@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMAPI.Core", "SMAPI.Core\SM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMAPI.Core.Test", "SMAPI.Core.Test\SMAPI.Core.Test.csproj", "{58E5ECAF-D888-44DB-8849-CCC0CF67755E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMAPI.Core.Sandbox", "SMAPI.Core.Sandbox\SMAPI.Core.Sandbox.csproj", "{2215BD65-5EA4-49BF-A234-9686886EA60A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{58E5ECAF-D888-44DB-8849-CCC0CF67755E}.Release|x64.Build.0 = Release|Any CPU
 		{58E5ECAF-D888-44DB-8849-CCC0CF67755E}.Release|x86.ActiveCfg = Release|Any CPU
 		{58E5ECAF-D888-44DB-8849-CCC0CF67755E}.Release|x86.Build.0 = Release|Any CPU
+		{2215BD65-5EA4-49BF-A234-9686886EA60A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2215BD65-5EA4-49BF-A234-9686886EA60A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2215BD65-5EA4-49BF-A234-9686886EA60A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2215BD65-5EA4-49BF-A234-9686886EA60A}.Debug|x64.Build.0 = Debug|Any CPU
+		{2215BD65-5EA4-49BF-A234-9686886EA60A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2215BD65-5EA4-49BF-A234-9686886EA60A}.Debug|x86.Build.0 = Debug|Any CPU
+		{2215BD65-5EA4-49BF-A234-9686886EA60A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2215BD65-5EA4-49BF-A234-9686886EA60A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2215BD65-5EA4-49BF-A234-9686886EA60A}.Release|x64.ActiveCfg = Release|Any CPU
+		{2215BD65-5EA4-49BF-A234-9686886EA60A}.Release|x64.Build.0 = Release|Any CPU
+		{2215BD65-5EA4-49BF-A234-9686886EA60A}.Release|x86.ActiveCfg = Release|Any CPU
+		{2215BD65-5EA4-49BF-A234-9686886EA60A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

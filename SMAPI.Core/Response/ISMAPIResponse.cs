@@ -8,8 +8,12 @@ namespace SMAPI.Core.Response
     {
         int StatusCode { get; set; }
 
-        Dictionary<string, string> Headers { get; set; }
+        string ReasonPhrase { get; set; }
+
+        Dictionary<string, IEnumerable<string>> Headers { get; set; }
 
         byte[] Body { get; set; }
+
+        long ResponseTime { get; set; }
     }
 }

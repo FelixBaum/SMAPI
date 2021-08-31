@@ -19,7 +19,7 @@ namespace SMAPI.Core
         {
             __ValidateRequest(Request);
 
-            var Executor = __GetExecutor(Request.RequestType);
+            var Executor = new SMAPIBaseExecutor();
             return Executor.Execute(Request);
         }
         #endregion
@@ -36,19 +36,6 @@ namespace SMAPI.Core
 
             if (Request.Url == null || Request.Url.Trim().Equals(string.Empty))
                 throw new ArgumentNullException("Request.Url");
-        }
-        #endregion
-
-        #region [__GetExecutor]
-        private SMAPIBaseExecutor __GetExecutor(eSMAPIRequestType RequestType)
-        {
-            switch (RequestType) 
-            {
-                case eSMAPIRequestType.GET:
-                    return new SMAPIGetExecutor();
-                default:
-                    return null;
-            }
         }
         #endregion
 

@@ -1,6 +1,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SMAPI.Core;
+using SMAPI.Core.Request;
 using System;
+using System.Net.Http;
 
 namespace SMAPI.Core.Test
 {
@@ -13,6 +15,18 @@ namespace SMAPI.Core.Test
         {
             var Runner = new SMAPIRunner();
             Runner.RunRequest(null);
+        }
+
+        [TestMethod]
+        public void SMAPIRunnerTest_Get_Request()
+        {
+            var Request = new SMAPIBaseRequest();
+            Request.RequestType = HttpMethod.Get;
+            Request.Url = "https://www.google.de";
+
+            var Runner = new SMAPIRunner();
+
+            Console.WriteLine(Runner.RunRequest(Request).Result);
         }
     }
 }
